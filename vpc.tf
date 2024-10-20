@@ -2,7 +2,7 @@ provider "aws" {
     region = var.aws_region 
 }
 
-data "aws_availability_zones" "availabile" {}
+data "aws_availability_zones" "available" {}
 
 locals {
   cluster_name    = "nikhil-eks-${random_string.suffix.result}"
